@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Redirect</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<script>
+    const path = window.location.pathname; // Gets "/smb"
+    document.querySelector("iframe").src = `https://registration.socio.events/e${path}`;
+</script>
+
+<body>
+    <iframe src="https://registration.socio.events/e/"></iframe>
+</body>
+
+</html>
